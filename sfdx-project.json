@@ -1,10 +1,14 @@
 {
-  "name": "ExampleSfdxRepository",
+  "name": "Auctions",
   "namespace": "",
   "packageDirectories": [
     {
-      "path": "sfdx-source/Modules/default",
-      "package": "DefaultModule",
+        "path": "sfdx-source/sfdx",
+        "default": true
+    },
+    {
+      "path": "sfdx-source/Modules/auction",
+      "package": "Auctions",
       "versionName": "ver 0.1",
       "versionNumber": "0.1.0.NEXT",
       "default": false,
@@ -21,10 +25,6 @@
     {
         "path": "sfdx-source/unpackaged",
         "default": false
-    },
-    {
-        "path": "sfdx-source/sfdx",
-        "default": true
     }
   ],
   "sfdcLoginUrl": "https://test.salesforce.com",

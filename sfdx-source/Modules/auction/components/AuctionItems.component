@@ -1,0 +1,18 @@
+<apex:component controller="AuctionItemController">
+    <apex:attribute assignTo="{!theEventId}" name="eventId" type="String" required="False" description="The eventId to display related auction items for." />
+    
+    
+    <apex:repeat value="{!items}" var="item">
+    
+        <div class="auction-item">
+            
+            <h2>
+            {!item.Name}
+            </h2>
+            <p class="description">
+                <apex:outputText escape="False" value="{!item.Description__c}" />
+            	<span class="attribution">{!item.Attribution__c}</span>
+            </p>
+        </div>        
+    </apex:repeat>
+</apex:component>

@@ -1,0 +1,4 @@
+<apex:page >
+    
+    <c:AuctionItems ></c:AuctionItems>
+</apex:page>
